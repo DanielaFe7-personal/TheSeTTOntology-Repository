@@ -1,0 +1,416 @@
+@prefix sett: <http://purl.org/net/sett/vocab#> .
+@prefix sett-annotations: <http://purl.org/net/sett/annotations#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix traces-codelist: <http://purl.org/net/sett/codelist/> .
+
+sett-annotations:Browning a skos:Concept ;
+    skos:broader sett-annotations:Vegetation ;
+    skos:definition "Indicates decreasing slope direction in vegetation, such as decline or degradation." ;
+    skos:notation "Browning" ;
+    skos:prefLabel "Browning" .
+
+sett-annotations:Cooling a skos:Concept ;
+    skos:broader sett-annotations:Temperature ;
+    skos:definition "Indicates decreasing slope direction in temperature, representing cooling." ;
+    skos:notation "Cooling" ;
+    skos:prefLabel "Cooling" .
+
+sett-annotations:Greening a skos:Concept ;
+    skos:broader sett-annotations:Vegetation ;
+    skos:definition "Indicates increasing slope direction in vegetation, such as growth or recovery." ;
+    skos:notation "Greening" ;
+    skos:prefLabel "Greening" .
+
+sett-annotations:LongTermDuration a skos:Concept ;
+    skos:broader sett-annotations:Duration ;
+    skos:definition "A duration classified as long-term, greater than 2/3 of total observations." ;
+    skos:notation "Long Term Duration" ;
+    skos:prefLabel "Long Term Duration" .
+
+sett-annotations:MediumTermDuration a skos:Concept ;
+    skos:broader sett-annotations:Duration ;
+    skos:definition "A duration classified as medium-term, between 1/3 and 2/3 of total observations." ;
+    skos:notation "Medium Term Duration" ;
+    skos:prefLabel "Medium Term Duration" .
+
+sett-annotations:ModeratelyDecreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseBreakpointMagnitude ;
+    skos:definition "Represents a moderate downward breakpoint magnitude." ;
+    skos:notation "Moderately Decrease Breakpoint Magnitude" ;
+    skos:prefLabel "Moderately Decrease Breakpoint Magnitude" .
+
+sett-annotations:ModeratelyDecreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:DecreaseSlope ;
+    skos:definition "Indicates a moderate downward trend in slope strength." ;
+    skos:notation "Moderately Decrease Slope" ;
+    skos:prefLabel "Moderately Decrease Slope" .
+
+sett-annotations:ModeratelyDecreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseTrendGradualMagnitude ;
+    skos:definition "Represents a moderate downward trend gradual magnitude." ;
+    skos:notation "Moderately Decrease Trend Gradual Magnitude" ;
+    skos:prefLabel "Moderately Decrease Trend Gradual Magnitude" .
+
+sett-annotations:ModeratelyIncreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseBreakpointMagnitude ;
+    skos:definition "Represents a moderate upward breakpoint magnitude." ;
+    skos:notation "Moderately Increase Breakpoint Magnitude" ;
+    skos:prefLabel "Moderately Increase Breakpoint Magnitude" .
+
+sett-annotations:ModeratelyIncreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:IncreaseSlope ;
+    skos:definition "Indicates a moderate upward trend in slope strength." ;
+    skos:notation "Moderately Increase Slope" ;
+    skos:prefLabel "Moderately Increase Slope" .
+
+sett-annotations:ModeratelyIncreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseTrendGradualMagnitude ;
+    skos:definition "Represents a moderate upward trend gradual magnitude." ;
+    skos:notation "Moderately Increase Trend Gradual Magnitude" ;
+    skos:prefLabel "Moderately Increase Trend Gradual Magnitude" .
+
+sett-annotations:NotStatisticallySignificant a skos:Concept ;
+    skos:broader sett-annotations:TrendSignificance ;
+    skos:definition "Indicates that the trend is not statistically significant (p-value > 0.05)." ;
+    skos:notation "Not Statistically Significant" ;
+    skos:prefLabel "Not Statistically Significant" .
+
+sett-annotations:ShortTermDuration a skos:Concept ;
+    skos:broader sett-annotations:Duration ;
+    skos:definition "A duration classified as short-term, up to 1/3 of total observations." ;
+    skos:notation "Short Term Duration" ;
+    skos:prefLabel "Short Term Duration" .
+
+sett-annotations:SlightlyDecreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseBreakpointMagnitude ;
+    skos:definition "Represents a slight downward breakpoint magnitude." ;
+    skos:notation "Slightly Decrease Breakpoint Magnitude" ;
+    skos:prefLabel "Slightly Decrease Breakpoint Magnitude" .
+
+sett-annotations:SlightlyDecreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:DecreaseSlope ;
+    skos:definition "Indicates a slight downward trend in slope strength." ;
+    skos:notation "Slightly Decrease Slope" ;
+    skos:prefLabel "Slightly Decrease Slope" .
+
+sett-annotations:SlightlyDecreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseTrendGradualMagnitude ;
+    skos:definition "Represents a slight downward trend gradual magnitude." ;
+    skos:notation "Slightly Decrease Trend Gradual Magnitude" ;
+    skos:prefLabel "Slightly Decrease Trend Gradual Magnitude" .
+
+sett-annotations:SlightlyIncreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseBreakpointMagnitude ;
+    skos:definition "Represents a slight upward breakpoint magnitude." ;
+    skos:notation "Slightly Increase Breakpoint Magnitude" ;
+    skos:prefLabel "Slightly Increase Breakpoint Magnitude" .
+
+sett-annotations:SlightlyIncreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:IncreaseSlope ;
+    skos:definition "Indicates a slight upward trend in slope strength." ;
+    skos:notation "Slightly Increase Slope" ;
+    skos:prefLabel "Slightly Increase Slope" .
+
+sett-annotations:SlightlyIncreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseTrendGradualMagnitude ;
+    skos:definition "Represents a slight upward trend gradual magnitude." ;
+    skos:notation "Slightly Increase Trend Gradual Magnitude" ;
+    skos:prefLabel "Slightly Increase Trend Gradual Magnitude" .
+
+sett-annotations:SnowAccumulation a skos:Concept ;
+    skos:broader sett-annotations:Snow ;
+    skos:definition "Indicates increasing slope direction in snow, representing accumulation." ;
+    skos:notation "Snow Accumulation" ;
+    skos:prefLabel "Snow Accumulation" .
+
+sett-annotations:SnowMelting a skos:Concept ;
+    skos:broader sett-annotations:Snow ;
+    skos:definition "Indicates decreasing slope direction in snow, representing melting." ;
+    skos:notation "Snow Melting" ;
+    skos:prefLabel "Snow Melting" .
+
+sett-annotations:StableSnow a skos:Concept ;
+    skos:broader sett-annotations:Snow ;
+    skos:definition "Indicates stable slope in snow with no change." ;
+    skos:notation "Stable Snow" ;
+    skos:prefLabel "Stable Snow" .
+
+sett-annotations:StableTemperature a skos:Concept ;
+    skos:broader sett-annotations:Temperature ;
+    skos:definition "Indicates stable slope in temperature with no change." ;
+    skos:notation "Stable Temperature" ;
+    skos:prefLabel "Stable Temperature" .
+
+sett-annotations:StableUrbanization a skos:Concept ;
+    skos:broader sett-annotations:Urbanization ;
+    skos:definition "Indicates stable slope in urbanization with no change." ;
+    skos:notation "Stable Urbanization" ;
+    skos:prefLabel "Stable Urbanization" .
+
+sett-annotations:StableVegetation a skos:Concept ;
+    skos:broader sett-annotations:Vegetation ;
+    skos:definition "Indicates stable slope in vegetation with no change." ;
+    skos:notation "Stable Vegetation" ;
+    skos:prefLabel "Stable Vegetation" .
+
+sett-annotations:StableWaterDepth a skos:Concept ;
+    skos:broader sett-annotations:Water ;
+    skos:definition "Indicates stable slope in water depth with no change." ;
+    skos:notation "Stable Water Depth" ;
+    skos:prefLabel "Stable Water Depth" .
+
+sett-annotations:StatisticallySignificant a skos:Concept ;
+    skos:broader sett-annotations:TrendSignificance ;
+    skos:definition "Indicates that the trend is statistically significant (p-value <= 0.05)." ;
+    skos:notation "Statistically Significant" ;
+    skos:prefLabel "Statistically Significant" .
+
+sett-annotations:StronglyDecreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseBreakpointMagnitude ;
+    skos:definition "Represents a strong downward breakpoint magnitude." ;
+    skos:notation "Strongly Decrease Breakpoint Magnitude" ;
+    skos:prefLabel "Strongly Decrease Breakpoint Magnitude" .
+
+sett-annotations:StronglyDecreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:DecreaseSlope ;
+    skos:definition "Indicates a strong downward trend in slope strength." ;
+    skos:notation "Strongly Decrease Slope" ;
+    skos:prefLabel "Strongly Decrease Slope" .
+
+sett-annotations:StronglyDecreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseTrendGradualMagnitude ;
+    skos:definition "Represents a strong downward trend gradual magnitude." ;
+    skos:notation "Strongly Decrease Trend Gradual Magnitude" ;
+    skos:prefLabel "Strongly Decrease Trend Gradual Magnitude" .
+
+sett-annotations:StronglyIncreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseBreakpointMagnitude ;
+    skos:definition "Represents a strong upward breakpoint magnitude." ;
+    skos:notation "Strongly Increase Breakpoint Magnitude" ;
+    skos:prefLabel "Strongly Increase Breakpoint Magnitude" .
+
+sett-annotations:StronglyIncreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:IncreaseSlope ;
+    skos:definition "Indicates a strong upward trend in slope strength." ;
+    skos:notation "Strongly Increase Slope" ;
+    skos:prefLabel "Strongly Increase Slope" .
+
+sett-annotations:StronglyIncreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseTrendGradualMagnitude ;
+    skos:definition "Represents a strong upward trend gradual magnitude." ;
+    skos:notation "Strongly Increase Trend Gradual Magnitude" ;
+    skos:prefLabel "Strongly Increase Trend Gradual Magnitude" .
+
+sett-annotations:UrbanGrowth a skos:Concept ;
+    skos:broader sett-annotations:Urbanization ;
+    skos:definition "Indicates increasing slope direction in urbanization, such as expansion." ;
+    skos:notation "Urban Growth" ;
+    skos:prefLabel "Urban Growth" .
+
+sett-annotations:UrbanLoss a skos:Concept ;
+    skos:broader sett-annotations:Urbanization ;
+    skos:definition "Indicates decreasing slope direction in urbanization, such as reduction." ;
+    skos:notation "Urban Loss" ;
+    skos:prefLabel "Urban Loss" .
+
+sett-annotations:VerySlightlyDecreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseBreakpointMagnitude ;
+    skos:definition "Represents a very slight downward breakpoint magnitude." ;
+    skos:notation "Very Slightly Decrease Breakpoint Magnitude" ;
+    skos:prefLabel "Very Slightly Decrease Breakpoint Magnitude" .
+
+sett-annotations:VerySlightlyDecreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:DecreaseSlope ;
+    skos:definition "Indicates a minimal downward trend in slope strength." ;
+    skos:notation "Very Slightly Decrease Slope" ;
+    skos:prefLabel "Very Slightly Decrease Slope" .
+
+sett-annotations:VerySlightlyDecreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseTrendGradualMagnitude ;
+    skos:definition "Represents a minimal downward trend gradual magnitude." ;
+    skos:notation "Very Slightly Decrease Trend Gradual Magnitude" ;
+    skos:prefLabel "Very Slightly Decrease Trend Gradual Magnitude" .
+
+sett-annotations:VerySlightlyIncreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseBreakpointMagnitude ;
+    skos:definition "Represents a very slight upward breakpoint magnitude." ;
+    skos:notation "Very Slightly Increase Breakpoint Magnitude" ;
+    skos:prefLabel "Very Slightly Increase Breakpoint Magnitude" .
+
+sett-annotations:VerySlightlyIncreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:IncreaseSlope ;
+    skos:definition "Indicates a minimal upward trend in slope strength." ;
+    skos:notation "Very Slightly Increase Slope" ;
+    skos:prefLabel "Very Slightly Increase Slope" .
+
+sett-annotations:VerySlightlyIncreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseTrendGradualMagnitude ;
+    skos:definition "Represents a minimal upward trend gradual magnitude." ;
+    skos:notation "Very Slightly Increase Trend Gradual Magnitude" ;
+    skos:prefLabel "Very Slightly Increase Trend Gradual Magnitude" .
+
+sett-annotations:VeryStronglyDecreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseBreakpointMagnitude ;
+    skos:definition "Represents a very strong downward breakpoint magnitude." ;
+    skos:notation "Very Strongly Decrease Breakpoint Magnitude" ;
+    skos:prefLabel "Very Strongly Decrease Breakpoint Magnitude" .
+
+sett-annotations:VeryStronglyDecreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:DecreaseSlope ;
+    skos:definition "Indicates an extremely strong downward trend in slope strength." ;
+    skos:notation "Very Strongly Decrease Slope" ;
+    skos:prefLabel "Very Strongly Decrease Slope" .
+
+sett-annotations:VeryStronglyDecreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:DecreaseTrendGradualMagnitude ;
+    skos:definition "Represents an extremely strong downward trend gradual magnitude." ;
+    skos:notation "Very Strongly Decrease Trend Gradual Magnitude" ;
+    skos:prefLabel "Very Strongly Decrease Trend Gradual Magnitude" .
+
+sett-annotations:VeryStronglyIncreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseBreakpointMagnitude ;
+    skos:definition "Represents a very strong upward breakpoint magnitude." ;
+    skos:notation "Very Strongly Increase Breakpoint Magnitude" ;
+    skos:prefLabel "Very Strongly Increase Breakpoint Magnitude" .
+
+sett-annotations:VeryStronglyIncreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:IncreaseSlope ;
+    skos:definition "Indicates an extremely strong upward trend in slope strength." ;
+    skos:notation "Very Strongly Increase Slope" ;
+    skos:prefLabel "Very Strongly Increase Slope" .
+
+sett-annotations:VeryStronglyIncreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:IncreaseTrendGradualMagnitude ;
+    skos:definition "Represents an extremely strong upward trend gradual magnitude." ;
+    skos:notation "Very Strongly Increase Trend Gradual Magnitude" ;
+    skos:prefLabel "Very Strongly Increase Trend Gradual Magnitude" .
+
+sett-annotations:Warming a skos:Concept ;
+    skos:broader sett-annotations:Temperature ;
+    skos:definition "Indicates increasing slope direction in temperature, representing warming." ;
+    skos:notation "Warming" ;
+    skos:prefLabel "Warming" .
+
+sett-annotations:WaterDepthDecrease a skos:Concept ;
+    skos:broader sett-annotations:Water ;
+    skos:definition "Indicates decreasing slope direction in water depth." ;
+    skos:notation "Water Depth Decrease" ;
+    skos:prefLabel "Water Depth Decrease" .
+
+sett-annotations:WaterDepthIncrease a skos:Concept ;
+    skos:broader sett-annotations:Water ;
+    skos:definition "Indicates increasing slope direction in water depth." ;
+    skos:notation "Water Depth Increase" ;
+    skos:prefLabel "Water Depth Increase" .
+
+sett-annotations:ZeroBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:BreakpointMagnitude ;
+    skos:definition "Represents no significant Breakpoint Magnitude." ;
+    skos:notation "Zero Breakpoint Magnitude" ;
+    skos:prefLabel "Zero Breakpoint Magnitude" .
+
+sett-annotations:ZeroSlope a skos:Concept ;
+    skos:broader sett-annotations:SlopeStrength ;
+    skos:definition "Indicates no change in slope, representing a flat trajectory." ;
+    skos:notation "Zero Slope" ;
+    skos:prefLabel "Zero Slope" .
+
+sett-annotations:ZeroTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:TrendGradualMagnitude ;
+    skos:definition "Represents no significant trend gradual magnitude." ;
+    skos:notation "Zero Trend Gradual Magnitude" ;
+    skos:prefLabel "Zero Trend Gradual Magnitude" .
+
+sett-annotations:TrendSignificance a skos:Concept ;
+    sett:semanticAnnotationBasedOnAttribute sett:LinearTrendPValue ;
+    skos:comment "Represents the statistical significance of trends based on p-value. A trend is considered statistically significant if p-value <= 0.05." ;
+    skos:prefLabel "Trend Significance" .
+
+sett-annotations:BreakpointMagnitude a skos:Concept ;
+    sett:semanticAnnotationBasedOnAttribute sett:BreakpointMagnitude ;
+    skos:comment "Represents the magnitude of breakpoints in trajectories, classified by Increase and Decrease, and further categorized into levels such as Very Slightly, Slightly, Moderately, Strongly, and Very Strongly." ;
+    skos:prefLabel "Breakpoint Magnitude" .
+
+sett-annotations:Duration a skos:Concept ;
+    sett:semanticAnnotationBasedOnAttribute sett:SegmentDuration ;
+    skos:comment "Annotation that Represents the duration of an episode. Durations are classified as short-term, medium-term, or long-term based on thresholds calculated using the total number of observations in Structured the trajectory. Short-term: observations <= total_observations/3, Medium-term: observations between total_observations/3 and 2*total_observations/3, Long-term: observations > 2*total_observations/3,Note: If the structured method employs interpolation techniques, the number of observations may differ from those in the raw trajectory." ;
+    skos:prefLabel "DurationEpisode" .
+
+sett-annotations:SlopeStrength a skos:Concept ;
+    sett:semanticAnnotationBasedOnAttribute sett:SlopeDirection,
+        sett:SlopeMagnitude ;
+    skos:comment "Episode annotation based on the strength of slope changes combining both direction (increase, decrease, or zero) and magnitude (e.g., very slightly, slightly, moderately, strongly, very strongly)." ;
+    skos:prefLabel "Slope Strength" .
+
+sett-annotations:Snow a skos:Concept ;
+    skos:broader sett-annotations:DomainSlopeDirection ;
+    skos:closeMatch traces-codelist:Snow ;
+    skos:prefLabel "Snow" .
+
+sett-annotations:Temperature a skos:Concept ;
+    skos:broader sett-annotations:DomainSlopeDirection ;
+    skos:closeMatch traces-codelist:Temperature ;
+    skos:prefLabel "Temperature" .
+
+sett-annotations:TrendGradualMagnitude a skos:Concept ;
+    sett:semanticAnnotationBasedOnAttribute sett:LinearTrendGradualMagnitude,
+        sett:SegmentDuration ;
+    skos:comment "Represents the magnitude of gradual trend changes, classified into categories based on thresholds. Calculated as the product of slope magnitude and duration. " ;
+    skos:prefLabel "Trend Gradual Magnitude" .
+
+sett-annotations:Urbanization a skos:Concept ;
+    skos:broader sett-annotations:DomainSlopeDirection ;
+    skos:closeMatch traces-codelist:Urbanization ;
+    skos:prefLabel "Urbanization" .
+
+sett-annotations:Vegetation a skos:Concept ;
+    skos:broader sett-annotations:DomainSlopeDirection ;
+    skos:closeMatch traces-codelist:Vegetation ;
+    skos:prefLabel "Vegetation" .
+
+sett-annotations:Water a skos:Concept ;
+    skos:broader sett-annotations:DomainSlopeDirection ;
+    skos:closeMatch traces-codelist:Water ;
+    skos:prefLabel "Water" .
+
+sett-annotations:DecreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:BreakpointMagnitude ;
+    skos:definition "Represents a downward breakpoint magnitude." ;
+    skos:notation "Decrease Breakpoint Magnitude" ;
+    skos:prefLabel "Decrease Breakpoint Magnitude" .
+
+sett-annotations:DecreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:SlopeStrength ;
+    skos:definition "Indicates a downward trend in slope strength." ;
+    skos:notation "Decrease Slope" ;
+    skos:prefLabel "Decrease Slope" .
+
+sett-annotations:DecreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:TrendGradualMagnitude ;
+    skos:definition "Represents a downward trend gradual magnitude." ;
+    skos:notation "Decrease Trend Gradual Magnitude" ;
+    skos:prefLabel "Decrease Trend Gradual Magnitude" .
+
+sett-annotations:DomainSlopeDirection a skos:Concept ;
+    sett:semanticAnnotationBasedOnAttribute sett:SlopeDirection ;
+    skos:comment "Represents the slope direction across different thematic domains, with domain-specific labels for increasing, decreasing, and stable trends." ;
+    skos:prefLabel "Domain Slope Direction" .
+
+sett-annotations:IncreaseBreakpointMagnitude a skos:Concept ;
+    skos:broader sett-annotations:BreakpointMagnitude ;
+    skos:definition "Represents an upward breakpoint magnitude." ;
+    skos:notation "Increase Breakpoint Magnitude" ;
+    skos:prefLabel "Increase Breakpoint Magnitude" .
+
+sett-annotations:IncreaseSlope a skos:Concept ;
+    skos:broader sett-annotations:SlopeStrength ;
+    skos:definition "Indicates an upward trend in slope strength." ;
+    skos:notation "Increase Slope" ;
+    skos:prefLabel "Increase Slope" .
+
+sett-annotations:IncreaseTrendGradualMagnitude a skos:Concept ;
+    skos:broader sett-annotations:TrendGradualMagnitude ;
+    skos:definition "Represents an upward trend gradual magnitude." ;
+    skos:notation "Increase Trend Gradual Magnitude" ;
+    skos:prefLabel "Increase Trend Gradual Magnitude" .
+

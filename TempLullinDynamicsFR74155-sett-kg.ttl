@@ -1,0 +1,451 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix setKG: <http://data.purl.org/net/sett/kg/traces/> .
+@prefix sett: <http://purl.org/net/sett/vocab#> .
+@prefix sett-annotations: <http://purl.org/net/sett/annotations#> .
+@prefix sett-time: <http://purl.org/net/sett/time#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix traces-codelist: <http://purl.org/net/sett/codelist/> .
+@prefix traces-geo: <http://purl.org/net/traces/dataset/geo/> .
+@prefix traces-qb: <http://purl.org/net/traces/dataset/qb/> .
+@prefix traces-time: <http://purl.org/net/traces/dataset/time/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+setKG:FR74155-RawTraj-Temperature-st a sett:RawTrajectory ;
+    sett:hasSlice traces-qb:FR74155-RawTraj-LST-st-Slice1,
+        traces-qb:FR74155-RawTraj-LST-st-Slice2,
+        traces-qb:FR74155-RawTraj-LST-st-Slice3,
+        traces-qb:FR74155-RawTraj-LST-st-Slice4 .
+
+setKG:FR74155-StrucTraj-Temperature-st a sett:StructuredTrajectory ;
+    sett:calculatedUsingSegmentMethod sett:BEAST ;
+    sett:calculatedUsingTransitionPointMethod sett:BEAST ;
+    sett:hasSegment setKG:FR74155-StrucTraj-Temperature-st-Segment1,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment2,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment3,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment4 ;
+    sett:hasTransitionPoint setKG:FR74155-StrucTraj-Temperature-st-TP1,
+        setKG:FR74155-StrucTraj-Temperature-st-TP2,
+        setKG:FR74155-StrucTraj-Temperature-st-TP3 .
+
+sett:BFAST dct:bibliographicCitation "https://doi.org/10.1016/j.rse.2009.08.014" ;
+    dct:description "Breaks For Additive Seasonal and Trend (BFAST)" ;
+    skos:notation "BFAST" .
+
+sett:LinearRegression dct:description "Linear Regression for modeling the relationship between a scalar response and explanatory variables." ;
+    owl:sameAs <https://dbpedia.org/resource/Linear_regression>,
+        <https://www.wikidata.org/entity/Q10861030> ;
+    skos:notation "Linear Regression" .
+
+traces-geo:FR74155 a sett:TerritorialUnit ;
+    sett:hasSeTT setKG:FR74155-SeTT-TempLullinDynamics .
+
+setKG:FR74155-SeTT-TempLullinDynamics a sett:SeTT ;
+    sett:hasFocusOn setKG:TempLullinDynamics ;
+    sett:hasThematicTrajectory setKG:FR74155-ThemTraj-Temperature-st .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-Duration1 a sett:SegmentDuration ;
+    sett:hasAttributeValue 22 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-Duration2 a sett:SegmentDuration ;
+    sett:hasAttributeValue 10 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-Duration3 a sett:SegmentDuration ;
+    sett:hasAttributeValue 12 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-Duration4 a sett:SegmentDuration ;
+    sett:hasAttributeValue 100 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-EndX1 a sett:SegmentEndX ;
+    sett:hasAttributeValue traces-time:19920415 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-EndX2 a sett:SegmentEndX ;
+    sett:hasAttributeValue traces-time:19941015 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-EndX3 a sett:SegmentEndX ;
+    sett:hasAttributeValue traces-time:19971015 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-EndX4 a sett:SegmentEndX ;
+    sett:hasAttributeValue traces-time:20221015 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-EndY1 a sett:SegmentEndY ;
+    sett:hasAttributeValue "11.854612154451758"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-EndY2 a sett:SegmentEndY ;
+    sett:hasAttributeValue "9.24978354193945"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-EndY3 a sett:SegmentEndY ;
+    sett:hasAttributeValue "10.0340485206018"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-EndY4 a sett:SegmentEndY ;
+    sett:hasAttributeValue "12.100236466851566"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-PValue1 a sett:LinearTrendPValue ;
+    sett:hasAttributeValue "0.049835616654502084"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-PValue2 a sett:LinearTrendPValue ;
+    sett:hasAttributeValue "0.016505714758767814"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-PValue3 a sett:LinearTrendPValue ;
+    sett:hasAttributeValue "0.0001879630111361393"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-PValue4 a sett:LinearTrendPValue ;
+    sett:hasAttributeValue "0.00045541070252998065"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpDirection1 a sett:SlopeDirection ;
+    sett:hasAttributeValue "positive"^^xsd:string .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpDirection2 a sett:SlopeDirection ;
+    sett:hasAttributeValue "negative"^^xsd:string .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpDirection3 a sett:SlopeDirection ;
+    sett:hasAttributeValue "positive"^^xsd:string .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpDirection4 a sett:SlopeDirection ;
+    sett:hasAttributeValue "positive"^^xsd:string .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpIntercept1 a sett:SlopeDirection ;
+    sett:hasAttributeValue "-84.3487767868984"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpIntercept2 a sett:SlopeDirection ;
+    sett:hasAttributeValue "634.6258093519899"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpIntercept3 a sett:SlopeDirection ;
+    sett:hasAttributeValue "-594.9869577199598"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpIntercept4 a sett:SlopeDirection ;
+    sett:hasAttributeValue "-19.91344622252493"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpMag1 a sett:SlopeMagnitude ;
+    sett:hasAttributeValue "0.048287816535006266"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpMag2 a sett:SlopeMagnitude ;
+    sett:hasAttributeValue "-0.31350451382723726"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpMag3 a sett:SlopeMagnitude ;
+    sett:hasAttributeValue "0.3028449745444985"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpMag4 a sett:SlopeMagnitude ;
+    sett:hasAttributeValue "0.01582648949404218"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-StartX1 a sett:SegmentStartX ;
+    sett:hasAttributeValue traces-time:19870115 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-StartX2 a sett:SegmentStartX ;
+    sett:hasAttributeValue traces-time:19920715 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-StartX3 a sett:SegmentStartX ;
+    sett:hasAttributeValue traces-time:19950115 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-StartX4 a sett:SegmentStartX ;
+    sett:hasAttributeValue traces-time:19980115 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-StartY1 a sett:SegmentStartY ;
+    sett:hasAttributeValue "11.601101117642969"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-StartY2 a sett:SegmentStartY ;
+    sett:hasAttributeValue "9.955168698050784"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-StartY3 a sett:SegmentStartY ;
+    sett:hasAttributeValue "9.201224840604368"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-StartY4 a sett:SegmentStartY ;
+    sett:hasAttributeValue "11.708530851874023"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-TrendMag1 a sett:LinearTrendGradualMagnitude ;
+    sett:hasAttributeValue "1.0623319637701378"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-TrendMag2 a sett:LinearTrendGradualMagnitude ;
+    sett:hasAttributeValue "-3.1350451382723725"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-TrendMag3 a sett:LinearTrendGradualMagnitude ;
+    sett:hasAttributeValue "3.6341396945339817"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment-TrendMag4 a sett:LinearTrendGradualMagnitude ;
+    sett:hasAttributeValue "1.5826489494042182"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-BpMag1 a sett:BreakpointMagnitude ;
+    sett:hasAttributeValue "-1.103128433227539"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-BpMag2 a sett:BreakpointMagnitude ;
+    sett:hasAttributeValue "-0.0322418212890625"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-BpMag3 a sett:BreakpointMagnitude ;
+    sett:hasAttributeValue "0.4427604675292969"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-BpPrb1 a sett:BreakpointProbability ;
+    sett:hasAttributeValue "0.1523333489894867"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-BpPrb2 a sett:BreakpointProbability ;
+    sett:hasAttributeValue "0.14912500977516174"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-BpPrb3 a sett:BreakpointProbability ;
+    sett:hasAttributeValue "0.1301250159740448"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-X1 a sett:TransitionPointX ;
+    sett:hasInstrinsicAttribute traces-time:19920715 .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-X2 a sett:TransitionPointX ;
+    sett:hasInstrinsicAttribute traces-time:19950115 .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-X3 a sett:TransitionPointX ;
+    sett:hasInstrinsicAttribute traces-time:19980115 .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-Y1 a sett:TransitionPointY ;
+    sett:hasAttributeValue "10.403003692626953"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-Y2 a sett:TransitionPointY ;
+    sett:hasAttributeValue "9.392230987548828"^^xsd:float .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP-Y3 a sett:TransitionPointY ;
+    sett:hasAttributeValue "10.824922561645508"^^xsd:float .
+
+setKG:FR74155-ThemTraj-Temperature-st a sett:ThematicTrajectory ;
+    sett:hasEpisode setKG:FR74155-ThemTraj-Temperature-st-Episode1,
+        setKG:FR74155-ThemTraj-Temperature-st-Episode2,
+        setKG:FR74155-ThemTraj-Temperature-st-Episode3,
+        setKG:FR74155-ThemTraj-Temperature-st-Episode4 ;
+    sett:hasEvent setKG:FR74155-ThemTraj-Temperature-st-Event1,
+        setKG:FR74155-ThemTraj-Temperature-st-Event2,
+        setKG:FR74155-ThemTraj-Temperature-st-Event3 ;
+    sett:hasTheme setKG:Temperature .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode-EndDate1 a sett:EpisodeEndDate ;
+    sett:hasAttributeValue traces-time:19920415 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode-EndDate2 a sett:EpisodeEndDate ;
+    sett:hasAttributeValue traces-time:19941015 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode-EndDate3 a sett:EpisodeEndDate ;
+    sett:hasAttributeValue traces-time:19971015 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode-EndDate4 a sett:EpisodeEndDate ;
+    sett:hasAttributeValue traces-time:20221015 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode-StartDate1 a sett:EpisodeStartDate ;
+    sett:hasAttributeValue traces-time:19870115 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode-StartDate2 a sett:EpisodeStartDate ;
+    sett:hasAttributeValue traces-time:19920715 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode-StartDate3 a sett:EpisodeStartDate ;
+    sett:hasAttributeValue traces-time:19950115 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode-StartDate4 a sett:EpisodeStartDate ;
+    sett:hasAttributeValue traces-time:19980115 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode1 a sett:Episode ;
+    sett:episodeIsAnnotatedFrom setKG:FR74155-StrucTraj-Temperature-st-Segment1 ;
+    sett:hasAnnotation sett-annotations:ShortTermDuration,
+        sett-annotations:StatisticallySignificant,
+        sett-annotations:VerySlightlyIncreaseSlope,
+        sett-annotations:VerySlightlyIncreaseTrendGradualMagnitude,
+        sett-annotations:Warming ;
+    sett:hasInstrinsicAttribute setKG:FR74155-ThemTraj-Temperature-st-Episode-EndDate1,
+        setKG:FR74155-ThemTraj-Temperature-st-Episode-StartDate1 ;
+    sett:hasSequenceOrder 1 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode2 a sett:Episode ;
+    sett:episodeIsAnnotatedFrom setKG:FR74155-StrucTraj-Temperature-st-Segment2 ;
+    sett:hasAnnotation sett-annotations:Cooling,
+        sett-annotations:ModeratelyDecreaseTrendGradualMagnitude,
+        sett-annotations:ShortTermDuration,
+        sett-annotations:StatisticallySignificant,
+        sett-annotations:StronglyDecreaseSlope ;
+    sett:hasInstrinsicAttribute setKG:FR74155-ThemTraj-Temperature-st-Episode-EndDate2,
+        setKG:FR74155-ThemTraj-Temperature-st-Episode-StartDate2 ;
+    sett:hasSequenceOrder 2 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode3 a sett:Episode ;
+    sett:episodeIsAnnotatedFrom setKG:FR74155-StrucTraj-Temperature-st-Segment3 ;
+    sett:hasAnnotation sett-annotations:ShortTermDuration,
+        sett-annotations:SlightlyIncreaseSlope,
+        sett-annotations:SlightlyIncreaseTrendGradualMagnitude,
+        sett-annotations:StatisticallySignificant,
+        sett-annotations:Warming ;
+    sett:hasInstrinsicAttribute setKG:FR74155-ThemTraj-Temperature-st-Episode-EndDate3,
+        setKG:FR74155-ThemTraj-Temperature-st-Episode-StartDate3 ;
+    sett:hasSequenceOrder 3 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Episode4 a sett:Episode ;
+    sett:episodeIsAnnotatedFrom setKG:FR74155-StrucTraj-Temperature-st-Segment4 ;
+    sett:hasAnnotation sett-annotations:LongTermDuration,
+        sett-annotations:StatisticallySignificant,
+        sett-annotations:VerySlightlyIncreaseSlope,
+        sett-annotations:VerySlightlyIncreaseTrendGradualMagnitude,
+        sett-annotations:Warming ;
+    sett:hasInstrinsicAttribute setKG:FR74155-ThemTraj-Temperature-st-Episode-EndDate4,
+        setKG:FR74155-ThemTraj-Temperature-st-Episode-StartDate4 ;
+    sett:hasSequenceOrder 4 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Event-Date1 a sett:EventDate ;
+    sett:hasAttributeValue traces-time:19920715 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Event-Date2 a sett:EventDate ;
+    sett:hasAttributeValue traces-time:19950115 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Event-Date3 a sett:EventDate ;
+    sett:hasAttributeValue traces-time:19980115 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Event1 a sett:Event ;
+    sett:eventIsAnnotatedFrom setKG:FR74155-StrucTraj-Temperature-st-TP1 ;
+    sett:hasAnnotation sett-annotations:StronglyDecreaseBreakpointMagnitude ;
+    sett:hasInstrinsicAttribute setKG:FR74155-ThemTraj-Temperature-st-Event-Date1 ;
+    sett:hasSequenceOrder 1 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Event2 a sett:Event ;
+    sett:eventIsAnnotatedFrom setKG:FR74155-StrucTraj-Temperature-st-TP2 ;
+    sett:hasAnnotation sett-annotations:VerySlightlyDecreaseBreakpointMagnitude ;
+    sett:hasInstrinsicAttribute setKG:FR74155-ThemTraj-Temperature-st-Event-Date2 ;
+    sett:hasSequenceOrder 2 .
+
+setKG:FR74155-ThemTraj-Temperature-st-Event3 a sett:Event ;
+    sett:eventIsAnnotatedFrom setKG:FR74155-StrucTraj-Temperature-st-TP3 ;
+    sett:hasAnnotation sett-annotations:SlightlyIncreaseBreakpointMagnitude ;
+    sett:hasInstrinsicAttribute setKG:FR74155-ThemTraj-Temperature-st-Event-Date3 ;
+    sett:hasSequenceOrder 3 .
+
+setKG:TempLullinDynamics a sett:Theme ;
+    skos:broader setKG:Temperature ;
+    skos:prefLabel "TempLullinDynamics" .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment1 a sett:LinearSegment ;
+    sett:hasExternalAttribute setKG:FR74155-StrucTraj-Temperature-st-Segment-PValue1,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-TrendMag1 ;
+    sett:hasInstrinsicAttribute setKG:FR74155-StrucTraj-Temperature-st-Segment-Duration1,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-EndX1,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-EndY1,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpDirection1,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpIntercept1,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpMag1,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-StartX1,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-StartY1 ;
+    sett:hasSequenceOrder 1 ;
+    sett:segmentIsCalculadedFrom traces-qb:FR74155-RawTraj-LST-st-Slice1 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment2 a sett:LinearSegment ;
+    sett:hasExternalAttribute setKG:FR74155-StrucTraj-Temperature-st-Segment-PValue2,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-TrendMag2 ;
+    sett:hasInstrinsicAttribute setKG:FR74155-StrucTraj-Temperature-st-Segment-Duration2,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-EndX2,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-EndY2,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpDirection2,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpIntercept2,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpMag2,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-StartX2,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-StartY2 ;
+    sett:hasSequenceOrder 2 ;
+    sett:segmentIsCalculadedFrom traces-qb:FR74155-RawTraj-LST-st-Slice2 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment3 a sett:LinearSegment ;
+    sett:hasExternalAttribute setKG:FR74155-StrucTraj-Temperature-st-Segment-PValue3,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-TrendMag3 ;
+    sett:hasInstrinsicAttribute setKG:FR74155-StrucTraj-Temperature-st-Segment-Duration3,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-EndX3,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-EndY3,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpDirection3,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpIntercept3,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpMag3,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-StartX3,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-StartY3 ;
+    sett:hasSequenceOrder 3 ;
+    sett:segmentIsCalculadedFrom traces-qb:FR74155-RawTraj-LST-st-Slice3 .
+
+setKG:FR74155-StrucTraj-Temperature-st-Segment4 a sett:LinearSegment ;
+    sett:hasExternalAttribute setKG:FR74155-StrucTraj-Temperature-st-Segment-PValue4,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-TrendMag4 ;
+    sett:hasInstrinsicAttribute setKG:FR74155-StrucTraj-Temperature-st-Segment-Duration4,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-EndX4,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-EndY4,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpDirection4,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpIntercept4,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-SlpMag4,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-StartX4,
+        setKG:FR74155-StrucTraj-Temperature-st-Segment-StartY4 ;
+    sett:hasSequenceOrder 4 ;
+    sett:segmentIsCalculadedFrom traces-qb:FR74155-RawTraj-LST-st-Slice4 .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP1 a sett:BreakPoint ;
+    sett:hasExternalAttribute setKG:FR74155-StrucTraj-Temperature-st-TP-BpMag1,
+        setKG:FR74155-StrucTraj-Temperature-st-TP-BpPrb1 ;
+    sett:hasInstrinsicAttribute setKG:FR74155-StrucTraj-Temperature-st-TP-X1,
+        setKG:FR74155-StrucTraj-Temperature-st-TP-Y1 ;
+    sett:hasSequenceOrder 1 ;
+    sett:transitionPointDelimitSlice traces-qb:FR74155-RawTraj-LST-st-Slice1,
+        traces-qb:FR74155-RawTraj-LST-st-Slice2 .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP2 a sett:BreakPoint ;
+    sett:hasExternalAttribute setKG:FR74155-StrucTraj-Temperature-st-TP-BpMag2,
+        setKG:FR74155-StrucTraj-Temperature-st-TP-BpPrb2 ;
+    sett:hasInstrinsicAttribute setKG:FR74155-StrucTraj-Temperature-st-TP-X2,
+        setKG:FR74155-StrucTraj-Temperature-st-TP-Y2 ;
+    sett:hasSequenceOrder 2 ;
+    sett:transitionPointDelimitSlice traces-qb:FR74155-RawTraj-LST-st-Slice2,
+        traces-qb:FR74155-RawTraj-LST-st-Slice3 .
+
+setKG:FR74155-StrucTraj-Temperature-st-TP3 a sett:BreakPoint ;
+    sett:hasExternalAttribute setKG:FR74155-StrucTraj-Temperature-st-TP-BpMag3,
+        setKG:FR74155-StrucTraj-Temperature-st-TP-BpPrb3 ;
+    sett:hasInstrinsicAttribute setKG:FR74155-StrucTraj-Temperature-st-TP-X3,
+        setKG:FR74155-StrucTraj-Temperature-st-TP-Y3 ;
+    sett:hasSequenceOrder 3 ;
+    sett:transitionPointDelimitSlice traces-qb:FR74155-RawTraj-LST-st-Slice3,
+        traces-qb:FR74155-RawTraj-LST-st-Slice4 .
+
+setKG:Temperature a sett:Theme ;
+    skos:exactMatch traces-codelist:Temperature ;
+    skos:prefLabel "Temperature" .
+
+sett:BEAST dct:bibliographicCitation "https://doi.org/10.1016/j.rse.2019.04.034" ;
+    dct:description "Bayesian Estimator of Abrupt change, Seasonal change, and Trend (BEAST)" ;
+    skos:notation "BEAST" .
+
+traces-time:19870115 a sett-time:DateTimeDescription ;
+    sett-time:seasonOfYear sett-time:Winter ;
+    time:day "---15"^^xsd:gDay ;
+    time:month "--01"^^xsd:gMonth ;
+    time:year "1987"^^xsd:gYear .
+
+traces-time:19920415 a sett-time:DateTimeDescription ;
+    sett-time:seasonOfYear sett-time:Spring ;
+    time:day "---15"^^xsd:gDay ;
+    time:month "--04"^^xsd:gMonth ;
+    time:year "1992"^^xsd:gYear .
+
+traces-time:19941015 a sett-time:DateTimeDescription ;
+    sett-time:seasonOfYear sett-time:Autumn ;
+    time:day "---15"^^xsd:gDay ;
+    time:month "--10"^^xsd:gMonth ;
+    time:year "1994"^^xsd:gYear .
+
+traces-time:19971015 a sett-time:DateTimeDescription ;
+    sett-time:seasonOfYear sett-time:Autumn ;
+    time:day "---15"^^xsd:gDay ;
+    time:month "--10"^^xsd:gMonth ;
+    time:year "1997"^^xsd:gYear .
+
+traces-time:20221015 a sett-time:DateTimeDescription ;
+    sett-time:seasonOfYear sett-time:Autumn ;
+    time:day "---15"^^xsd:gDay ;
+    time:month "--10"^^xsd:gMonth ;
+    time:year "2022"^^xsd:gYear .
+
+traces-time:19920715 a sett-time:DateTimeDescription ;
+    sett-time:seasonOfYear sett-time:Summer ;
+    time:day "---15"^^xsd:gDay ;
+    time:month "--07"^^xsd:gMonth ;
+    time:year "1992"^^xsd:gYear .
+
+traces-time:19950115 a sett-time:DateTimeDescription ;
+    sett-time:seasonOfYear sett-time:Winter ;
+    time:day "---15"^^xsd:gDay ;
+    time:month "--01"^^xsd:gMonth ;
+    time:year "1995"^^xsd:gYear .
+
+traces-time:19980115 a sett-time:DateTimeDescription ;
+    sett-time:seasonOfYear sett-time:Winter ;
+    time:day "---15"^^xsd:gDay ;
+    time:month "--01"^^xsd:gMonth ;
+    time:year "1998"^^xsd:gYear .
+
